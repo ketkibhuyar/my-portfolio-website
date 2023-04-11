@@ -14,9 +14,8 @@ function App() {
         <Header />
         <div className='content'>
           <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            {/* <Route exact path='/blogs' component={BlogsPage} />
-            <Route exact path='/projects' component={ProjectsPage} /> */}
+            <Route exact path='/my-portfolio-website' element={<HomePage/>}/>
+            <Route exact path='/' element={<HomePage/>}/>
             <Route exact path='/projects' element={<ProjectPage/>} />
             <Route exact path='/education' element={<EducationPage/>} />
           </Routes>

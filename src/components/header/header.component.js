@@ -10,7 +10,7 @@ import {
 
 const Header = () => (
   <HeaderContainer>
-    <TitleContainer to='/'>
+    <TitleContainer to='/my-portfolio-website'>
       <Title>Ketki Bhuyar</Title>
       <TitleShort>Ketki</TitleShort>
     </TitleContainer>
