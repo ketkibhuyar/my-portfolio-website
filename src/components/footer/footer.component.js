@@ -14,20 +14,11 @@ const Footer = () => {
   <div className='footer-container'>
     <div className='footer-social-media'>
       <div className='footer-links'>
-        <span onClick={() => openLink('https://fullyunderstood.com/author/indrajitbnikam/')}>
-          <img src={fullyUnderstood} alt='Fullyunderstood logo' className='icon'/>
-        </span>
-        <span onClick={() => openLink('https://github.com/indrajitbnikam')}>
+        <span onClick={() => openLink('https://github.com/ketkibhuyar')}>
           <GithubLogo className='icon'/>
         </span>
-        <span onClick={() => openLink('https://stackoverflow.com/users/9792373/indrajeet?tab=profile')}>
-          <StackOverflowLogo className='icon'/>
-        </span>
-        <span onClick={() => openLink('https://www.linkedin.com/in/indrajeet-nikam-3737a8101/')}>
+        <span onClick={() => openLink('https://www.linkedin.com/in/ketki-bhuyar-b14169177/')}>
           <LinkedinLogo className='icon'/>
-        </span>
-        <span onClick={() => openLink('https://www.xing.com/profile/Indrajeet_Nikam2/cv')}>
-          <XingLogo className='icon'/>
         </span>
       </div>
     </div>
@@ -35,7 +26,7 @@ const Footer = () => {
       Created using react 💖
     </p>
     <div className='footer-download-resume'>
-      <button className='download-button' onClick={() => openLink('https://drive.google.com/file/d/17ysiokCc8iKnTkmsM11yL73U3VkF04ML/view?usp=sharing')}>
+      <button className='download-button' onClick={() => openLink('https://drive.google.com/file/d/1fkfqjXlKoUZbV1QA5eUzQvdZEEsKRs5y/view?usp=share_link')}>
         Resumé
       </button>
     </div>
