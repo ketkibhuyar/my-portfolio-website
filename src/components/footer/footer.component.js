@@ -1,10 +1,7 @@
 import './footer.scss';
 import fullyUnderstood from '../../assets/fu-icon.png';
 import { ReactComponent as LinkedinLogo } from '../../assets/linkedin.svg';
-import { ReactComponent as XingLogo } from '../../assets/xing.svg';
 import { ReactComponent as GithubLogo } from '../../assets/github.svg';
-import { ReactComponent as StackOverflowLogo } from '../../assets/stack-overflow.svg';
-
 const Footer = () => {
   const openLink = (link) => {
     window.open(link, '_blank');
@@ -27,7 +24,7 @@ const Footer = () => {
     </p>
     <div className='footer-download-resume'>
       <button className='download-button' onClick={() => openLink('https://drive.google.com/file/d/1fkfqjXlKoUZbV1QA5eUzQvdZEEsKRs5y/view?usp=share_link')}>
-        Resumé
+        Resume
       </button>
     </div>
   </div>

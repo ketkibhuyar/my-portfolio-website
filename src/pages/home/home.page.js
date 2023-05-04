@@ -1,33 +1,13 @@
 import { useDencrypt } from "use-dencrypt-effect";
 import ketkiPic from '../../assets/KetkiImage.jpg';
+import springLogo from '../../assets/spring-logo.jpg';
+import javaLogo from '../../assets/java-logo.png';
+import sqlLogo from '../../assets/sql.png';
+import csharpLogo from '../../assets/Csharp_Logo.png';
 import "./home.scss";
-import { useEffect } from "react";
-const greetings = ["नमस्ते", "Hello", "Guten Tag", "こんにちは"];
 
 const HomePage = () => {
-  const [greeting, setGreeting] = useDencrypt("🙏🙏");
-
-  useEffect(() => {
-    let i = 0;
-    let run = true;
-
-    const loop = async () => {
-      while (run) {
-        await new Promise((resolve) => setTimeout(resolve, 3000));
-        await setGreeting(greetings[i]);
-
-        i = i === greetings.length - 1 ? 0 : i + 1;
-      }
-    };
-
-    if (run) {
-      loop();
-    }
-
-    return () => {
-      run = false;
-    };
-  }, [setGreeting]);
+  const greeting = "🙏";
 
   return (
     <>
@@ -39,8 +19,10 @@ const HomePage = () => {
         </div>
         <div className="intro-description">
           <div className="description-container">
-            <h2 className="description-title">{greeting}</h2>
+            <h2 className="description-title">{greeting} Hello {greeting}</h2>
             <p className="description-text">
+            I am Ketki.
+            <br></br>
             I am good at developing Full-Stack applications using following technologies.
             </p>
             <div className="description-logos">
@@ -48,6 +30,21 @@ const HomePage = () => {
                 <img
                   src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
                   alt=""
+                />
+              </span>
+              <span>
+                <img
+                  src= { springLogo }
+                />
+              </span>
+              <span>
+                <img
+                  src= { javaLogo }
+                />
+              </span>
+              <span>
+                <img
+                  src= { sqlLogo }
                 />
               </span>
               <span>
@@ -70,15 +67,10 @@ const HomePage = () => {
               </span>
               <span>
                 <img
-                  src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg"
-                  alt=""
+                  src= { csharpLogo }
                 />
               </span>
             </div>
-            <p className="description-text">
-              I am also huge fan of beautifully designed products and hence go
-              extra mile to achieve the same.
-            </p>
           </div>
         </div>
       </div>
